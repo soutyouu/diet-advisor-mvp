@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #36423d;
+  background: #fffdf5;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+input,
+select,
+textarea {
+  font-size: 16px;
+}
+
+.card {
+  @apply rounded-2xl border border-white/80 bg-white/90 p-4 shadow-soft;
+}
+
+.field {
+  @apply w-full rounded-xl border border-mint/70 bg-white px-3 py-2 text-sm outline-none focus:border-leaf focus:ring-2 focus:ring-mint/60;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl bg-leaf px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#629b68] disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl border border-mint bg-white px-4 py-2 text-sm font-semibold text-ink transition hover:bg-mint/25;
+}
